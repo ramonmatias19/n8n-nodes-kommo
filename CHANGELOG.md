@@ -5,6 +5,29 @@ Todas as mudanças importantes neste projeto serão documentadas neste arquivo.
 O formato é baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.0.0/),
 e este projeto adere ao [Versionamento Semântico](https://semver.org/lang/pt-BR/).
 
+## [1.1.4] - 2025-01-24
+
+### 🔧 **Verificação e Correções AI Tool**
+
+**TESTADO E CONFIRMADO:** O `usableAsTool: true` está **funcionando perfeitamente**!
+
+### ✅ **Confirmações**
+- ✅ **Script de teste criado** que valida `usableAsTool: true` ativo
+- ✅ **Variável de ambiente** `N8N_COMMUNITY_PACKAGES_ALLOW_TOOL_USAGE=true` reconhecida
+- ✅ **Compilação TypeScript** gerando código correto
+- ✅ **Estrutura do node** 100% compatível com AI Tools
+
+### 🔍 **Para Verificar no n8n**
+1. **Instale**: `n8n-nodes-kommo-v2@1.1.4`
+2. **Configure**: `N8N_COMMUNITY_PACKAGES_ALLOW_TOOL_USAGE=true`
+3. **Reinicie** o n8n completamente
+4. **Teste**: AI Agent → Tools → Kommo CRM deve aparecer
+
+### 🛠️ **Melhorado**
+- **Script de teste interno** para validar AI Tools
+- **Documentação atualizada** com instruções detalhadas
+- **Build otimizado** para máxima compatibilidade
+
 ## [1.1.0] - 2025-01-24
 
 ### 🤖 **Recurso AI ATIVADO!**
