@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.description = void 0;
 exports.description = [
     {
-        displayName: 'URL de Destino',
+        displayName: 'URL De Destino',
         name: 'destination',
         type: 'string',
         required: true,
@@ -30,21 +30,6 @@ exports.description = [
         },
         default: [],
         options: [
-            {
-                name: 'Lead Adicionado',
-                value: 'add_lead',
-                description: 'Evento disparado quando um lead é adicionado',
-            },
-            {
-                name: 'Lead Atualizado',
-                value: 'update_lead',
-                description: 'Evento disparado quando um lead é atualizado',
-            },
-            {
-                name: 'Lead Deletado',
-                value: 'delete_lead',
-                description: 'Evento disparado quando um lead é deletado',
-            },
             {
                 name: 'Contato Adicionado',
                 value: 'add_contact',
@@ -74,6 +59,21 @@ exports.description = [
                 name: 'Empresa Deletada',
                 value: 'delete_company',
                 description: 'Evento disparado quando uma empresa é deletada',
+            },
+            {
+                name: 'Lead Adicionado',
+                value: 'add_lead',
+                description: 'Evento disparado quando um lead é adicionado',
+            },
+            {
+                name: 'Lead Atualizado',
+                value: 'update_lead',
+                description: 'Evento disparado quando um lead é atualizado',
+            },
+            {
+                name: 'Lead Deletado',
+                value: 'delete_lead',
+                description: 'Evento disparado quando um lead é deletado',
             },
         ],
         description: 'Eventos que dispararão o webhook',

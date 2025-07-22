@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.description = void 0;
 exports.description = [
     {
-        displayName: 'ID do Webhook',
+        displayName: 'ID Do Webhook',
         name: 'webhookId',
         type: 'string',
         required: true,

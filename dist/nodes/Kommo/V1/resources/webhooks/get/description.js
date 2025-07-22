@@ -8,7 +8,6 @@ exports.description = [
         type: 'number',
         typeOptions: {
             minValue: 1,
-            maxValue: 250,
         },
         default: 50,
         displayOptions: {
@@ -17,7 +16,7 @@ exports.description = [
                 operation: ['get'],
             },
         },
-        description: 'Número máximo de webhooks para retornar',
+        description: 'Max number of results to return',
     },
 ];
 //# sourceMappingURL=description.js.map

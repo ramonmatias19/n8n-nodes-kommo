@@ -2,7 +2,7 @@ import { INodeProperties } from 'n8n-workflow';
 
 export const description: INodeProperties[] = [
 	{
-		displayName: 'ID do Webhook',
+		displayName: 'ID Do Webhook',
 		name: 'webhookId',
 		type: 'string',
 		required: true,

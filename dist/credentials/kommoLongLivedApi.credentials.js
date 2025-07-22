@@ -4,37 +4,29 @@ exports.kommoLongLivedApi = void 0;
 class kommoLongLivedApi {
     constructor() {
         this.name = 'kommoLongLivedApi';
-        this.displayName = 'Kommo Long Lived Token API';
-        this.documentationUrl = 'https://kommo.com/developers';
-        this.icon = `file:kommo_logo.svg`;
+        this.displayName = 'Kommo CRM Long-Lived Token API';
+        this.documentationUrl = 'https://developers.kommo.com/docs/oauth/long-lived-token';
+        this.icon = 'file:kommo_logo.svg';
         this.properties = [
             {
-                displayName: 'Subdomain',
+                displayName: 'Subdomínio',
                 name: 'subdomain',
                 type: 'string',
                 default: '',
-                placeholder: 'mycompany',
-                description: 'Just subdomain. Without .kommo.com.',
+                placeholder: 'minhaempresa',
+                description: 'Apenas o subdomínio da sua conta Kommo. Sem .kommo.com',
                 required: true,
             },
             {
-                displayName: 'Long term API key',
-                name: 'apiKey',
+                displayName: 'Access Token (Long-lived)',
+                name: 'accessToken',
                 type: 'string',
                 typeOptions: { password: true },
                 default: '',
+                description: 'Token de acesso de longa duração gerado na sua conta Kommo para integrações privadas',
+                required: true,
             },
         ];
-        this.test = {
-            request: {
-                baseURL: `=https://{{$credentials.subdomain}}.kommo.com/api/v4/`,
-                url: 'account',
-            },
-        };
-    }
-    async authenticate(credentials, requestOptions) {
-        requestOptions.headers = { authorization: `Bearer ${credentials.apiKey}` };
-        return requestOptions;
     }
 }
 exports.kommoLongLivedApi = kommoLongLivedApi;

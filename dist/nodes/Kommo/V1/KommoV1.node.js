@@ -84,7 +84,7 @@ class KommoV1 {
                     type: 'options',
                     options: [
                         {
-                            name: 'Token de Longa Duração',
+                            name: 'Token De Longa Duração',
                             value: 'longLivedToken',
                         },
                         {
@@ -105,12 +105,12 @@ class KommoV1 {
                             value: 'account',
                         },
                         {
-                            name: 'Empresa',
-                            value: 'companies',
-                        },
-                        {
                             name: 'Contato',
                             value: 'contacts',
+                        },
+                        {
+                            name: 'Empresa',
+                            value: 'companies',
                         },
                         {
                             name: 'Lead',

@@ -7,7 +7,7 @@ export const description: INodeProperties[] = [
 		type: 'number',
 		typeOptions: {
 			minValue: 1,
-			maxValue: 250,
+
 		},
 		default: 50,
 		displayOptions: {
@@ -16,6 +16,6 @@ export const description: INodeProperties[] = [
 				operation: ['get'],
 			},
 		},
-		description: 'Número máximo de webhooks para retornar',
+		description: 'Max number of results to return',
 	},
 ]; 

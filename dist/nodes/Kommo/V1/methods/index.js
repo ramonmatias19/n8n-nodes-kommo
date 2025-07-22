@@ -18,7 +18,6 @@ async function loadPipelinesOptions() {
 }
 exports.loadPipelinesOptions = loadPipelinesOptions;
 async function getAllStatuses() {
-    var _a;
     const pipelinesResponseData = await loadPipelinesOptions.call(this);
     if (!pipelinesResponseData.length) {
         throw new n8n_workflow_1.NodeOperationError(this.getNode(), 'No data got returned');
@@ -26,11 +25,12 @@ async function getAllStatuses() {
     const resultArray = [];
     for (const pipeline of pipelinesResponseData) {
         const responseData = await transport_1.apiRequest.call(this, 'GET', `leads/pipelines/${pipeline.value}/statuses`, {});
-        const statuses = (_a = responseData === null || responseData === void 0 ? void 0 : responseData._embedded) === null || _a === void 0 ? void 0 : _a.statuses.map((s) => ({
+        const embedded = responseData._embedded;
+        const statuses = (embedded === null || embedded === void 0 ? void 0 : embedded.statuses) ? embedded.statuses.map((s) => ({
             ...s,
             pipeline_name: pipeline.name,
-        }));
-        if (statuses)
+        })) : [];
+        if (statuses.length)
             resultArray.push(...statuses);
     }
     return resultArray;
@@ -221,7 +221,8 @@ exports.getTags = (0, cacheRequest_1.cacheOptionsRequest)(async function getTags
 });
 exports.getTaskTypes = (0, cacheRequest_1.cacheOptionsRequest)(async function getTaskTypes() {
     const accountInfo = await transport_1.apiRequest.call(this, 'GET', `account`, {}, { with: 'task_types' });
-    const taskTypes = accountInfo._embedded.task_types;
+    const embedded = accountInfo._embedded;
+    const taskTypes = (embedded === null || embedded === void 0 ? void 0 : embedded.task_types) || [];
     return taskTypes.map((field) => ({
         name: field.name.length > 30 ? `${field.name.slice(0, 30)}...` : field.name,
         value: field.id,

@@ -48,12 +48,14 @@ async function getAllStatuses(this: ILoadOptionsFunctions): Promise<IStatus[]> {
 			'GET',
 			`leads/pipelines/${pipeline.value}/statuses`,
 			{},
-		);
-		const statuses: IStatus[] = responseData?._embedded?.statuses.map((s: IStatus) => ({
+		) as IDataObject;
+		
+		const embedded = responseData._embedded as IDataObject;
+		const statuses: IStatus[] = embedded?.statuses ? (embedded.statuses as IStatus[]).map((s: IStatus) => ({
 			...s,
 			pipeline_name: pipeline.name,
-		}));
-		if (statuses) resultArray.push(...statuses);
+		})) : [];
+		if (statuses.length) resultArray.push(...statuses);
 	}
 	return resultArray;
 }
@@ -277,7 +279,7 @@ export const getCatalogCustomFields = cacheOptionsRequest(async function getCata
 export const getLossReasons = cacheOptionsRequest(async function getLossReasons(
 	this: ILoadOptionsFunctions,
 ): Promise<INodePropertyOptions[]> {
-	const accSettingsData: IAccount = await apiRequest.call(this, 'GET', 'account', {});
+	const accSettingsData = await apiRequest.call(this, 'GET', 'account', {}) as IAccount;
 	if (!accSettingsData.is_loss_reason_enabled) return [];
 
 	const lrResponseData: Array<IResponseData<'loss_reasons', ILossReason>> =
@@ -338,17 +340,18 @@ export const getTags = cacheOptionsRequest(async function getTags(
 export const getTaskTypes = cacheOptionsRequest(async function getTaskTypes(
 	this: ILoadOptionsFunctions,
 ): Promise<INodePropertyOptions[]> {
-	const accountInfo: IAccount = await apiRequest.call(
+	const accountInfo = await apiRequest.call(
 		this,
 		'GET',
 		`account`,
 		{},
 		{ with: 'task_types' },
-	);
+	) as IDataObject;
 
-	const taskTypes = accountInfo._embedded.task_types;
+	const embedded = accountInfo._embedded as IDataObject;
+	const taskTypes = embedded?.task_types as any[] || [];
 
-	return taskTypes.map((field) => ({
+	return taskTypes.map((field: any) => ({
 		name: field.name.length > 30 ? `${field.name.slice(0, 30)}...` : field.name,
 		value: field.id,
 	}));

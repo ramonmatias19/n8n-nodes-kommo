@@ -8,6 +8,34 @@ export const addStatusColor = (displayOptions: IDisplayOptions | undefined): INo
 		default: '#d6eaff',
 		options: [
 			{
+				name: 'Cветлый желтый',
+				value: '#fffd7f',
+			},
+			{
+				name: 'Cветлый зелёный',
+				value: '#deff81',
+			},
+			{
+				name: 'Cветлый красный',
+				value: '#ffc8c8',
+			},
+			{
+				name: 'Cветлый оранжевый',
+				value: '#ffdc7f',
+			},
+			{
+				name: 'Cветлый серый',
+				value: '#e6e8ea',
+			},
+			{
+				name: 'Cветлый синий',
+				value: '#c1e0ff',
+			},
+			{
+				name: 'Cветлый фиолетовый',
+				value: '#f3beff',
+			},
+			{
 				name: 'Желтый',
 				value: '#fff000',
 			},
@@ -62,34 +90,6 @@ export const addStatusColor = (displayOptions: IDisplayOptions | undefined): INo
 			{
 				name: 'Фиолетовый',
 				value: '#eb93ff',
-			},
-			{
-				name: 'Cветлый желтый',
-				value: '#fffd7f',
-			},
-			{
-				name: 'Cветлый зелёный',
-				value: '#deff81',
-			},
-			{
-				name: 'Cветлый красный',
-				value: '#ffc8c8',
-			},
-			{
-				name: 'Cветлый оранжевый',
-				value: '#ffdc7f',
-			},
-			{
-				name: 'Cветлый серый',
-				value: '#e6e8ea',
-			},
-			{
-				name: 'Cветлый синий',
-				value: '#c1e0ff',
-			},
-			{
-				name: 'Cветлый фиолетовый',
-				value: '#f3beff',
 			},
 		],
 		displayOptions,

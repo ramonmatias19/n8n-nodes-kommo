@@ -68,7 +68,7 @@ export class KommoV1 implements INodeType {
 					type: 'options',
 					options: [
 						{
-							name: 'Token de Longa Duração',
+							name: 'Token De Longa Duração',
 							value: 'longLivedToken',
 						},
 						{
@@ -89,12 +89,12 @@ export class KommoV1 implements INodeType {
 							value: 'account',
 						},
 						{
-							name: 'Empresa',
-							value: 'companies',
-						},
-						{
 							name: 'Contato',
 							value: 'contacts',
+						},
+						{
+							name: 'Empresa',
+							value: 'companies',
 						},
 						{
 							name: 'Lead',
