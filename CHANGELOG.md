@@ -5,6 +5,68 @@ Todas as mudanças importantes neste projeto serão documentadas neste arquivo.
 O formato é baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.0.0/),
 e este projeto adere ao [Versionamento Semântico](https://semver.org/lang/pt-BR/).
 
+## [1.0.0] - 2025-01-24 - n8n-nodes-kommo-v2
+
+### 🚀 **Nova Identidade do Pacote**
+
+**IMPORTANTE:** O pacote foi renomeado de `n8n-nodes-kommo-crm` para `n8n-nodes-kommo-v2` para contornar as limitações de republicação do NPM e oferecer uma versão mais estável.
+
+### ✨ **Instalação Atualizada**
+```bash
+# Nova instalação
+npm install n8n-nodes-kommo-v2
+
+# Via n8n Community Nodes
+# Use: n8n-nodes-kommo-v2
+```
+
+### 🛠️ **Todas as Correções Mantidas**
+- **Erros de compilação TypeScript** resolvidos completamente
+- **Problemas de lint ESLint** corrigidos com reordenação alfabética
+- **Tipagem da API** melhorada com casts adequados para IDataObject
+- **Package.json** normalizado para padrões NPM
+- **Dependências problemáticas** removidas (async-await-mutex-lock)
+
+### 🔧 **Melhorias Técnicas**
+- **Qualidade do código** com 0 erros de build e lint
+- **Compatibilidade** com padrões n8n Community Nodes
+- **Estabilidade** da integração com API Kommo
+- **Webhooks completos** implementados
+
+### 📦 **Recursos Disponíveis**
+✅ **Gestão de Conta** - Informações da conta  
+✅ **Leads** - CRUD completo  
+✅ **Contatos** - CRUD completo  
+✅ **Empresas** - CRUD completo  
+✅ **Tarefas** - CRUD completo  
+✅ **Notas** - CRUD completo  
+✅ **Listas** - CRUD completo  
+✅ **Webhooks** - Criar, listar e excluir *(NOVO)*
+
+### 🎯 **Status do Projeto**
+- **Build:** ✅ Sucesso
+- **Lint:** ✅ Sucesso  
+- **Tipos:** ✅ Corrigidos
+- **NPM:** ✅ Pronto para publicação
+
+---
+
+### **Histórico Anterior (n8n-nodes-kommo-crm)**
+
+## [1.0.2] - 2025-01-24
+
+### 🛠️ Corrigido
+- **Erros de compilação TypeScript** resolvidos completamente
+- **Problemas de lint ESLint** corrigidos com reordenação alfabética
+- **Tipagem da API** melhorada com casts adequados para IDataObject
+- **Package.json** normalizado para padrões NPM
+- **Dependências problemáticas** removidas (async-await-mutex-lock)
+
+### 🔧 Melhorado
+- **Qualidade do código** com 0 erros de build e lint
+- **Compatibilidade** com padrões n8n Community Nodes
+- **Estabilidade** da integração com API Kommo
+
 ## [1.0.0] - 2025-01-24
 
 ### 🎉 Nova Versão Completa - n8n-nodes-kommo-crm

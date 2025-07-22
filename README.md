@@ -1,4 +1,4 @@
-# n8n-nodes-kommo-crm
+# n8n-nodes-kommo-v2
 
 <p align="center"><br>
 Este Community Node é uma solução 100% gratuita, criada com o intuito de simplificar e auxiliar toda a comunidade a integrar e utilizar ao máximo os principais recursos oferecidos pelo <b>Kommo CRM</b> em seus projetos no N8N.
@@ -6,16 +6,16 @@ Este Community Node é uma solução 100% gratuita, criada com o intuito de simp
 <br>
 	
 <div align="center">
-  <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.npmjs.org%2Fdownloads%2Fpoint%2Flast-year%2Fn8n-nodes-kommo-crm&query=downloads&style=for-the-badge&label=Total%20de%20Downloads&labelColor=%230d1117&color=%23359514&cacheSeconds=30&link=https%3A%2F%2Fwww.npmjs.com%2Fpackage%2Fn8n-nodes-kommo-crm" alt="Downloads Badge">
-  <img src="https://img.shields.io/npm/v/n8n-nodes-kommo-crm?style=for-the-badge&label=Versão&labelColor=%230d1117&color=%23007ACC" alt="Version Badge">
-  <img src="https://img.shields.io/npm/l/n8n-nodes-kommo-crm?style=for-the-badge&label=Licença&labelColor=%230d1117&color=%23FFA500" alt="License Badge">
+  <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.npmjs.org%2Fdownloads%2Fpoint%2Flast-year%2Fn8n-nodes-kommo-v2&query=downloads&style=for-the-badge&label=Total%20de%20Downloads&labelColor=%230d1117&color=%23359514&cacheSeconds=30&link=https%3A%2F%2Fwww.npmjs.com%2Fpackage%2Fn8n-nodes-kommo-v2" alt="Downloads Badge">
+  <img src="https://img.shields.io/npm/v/n8n-nodes-kommo-v2?style=for-the-badge&label=Versão&labelColor=%230d1117&color=%23007ACC" alt="Version Badge">
+  <img src="https://img.shields.io/npm/l/n8n-nodes-kommo-v2?style=for-the-badge&label=Licença&labelColor=%230d1117&color=%23FFA500" alt="License Badge">
 </div>
 <br>
 
 <p align="center">
   <a href="mailto:contato@ramonmatias.dev"><img src="https://img.shields.io/badge/Email-Suporte-red?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"></a>     
-  <a href="https://github.com/ramonmatias/n8n-nodes-kommo-crm"><img src="https://img.shields.io/badge/GitHub-Repositório-black?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"></a>     
-  <a href="https://www.npmjs.com/package/n8n-nodes-kommo-crm"><img src="https://img.shields.io/badge/NPM-Package-red?style=for-the-badge&logo=npm&logoColor=white" alt="NPM"></a>
+  <a href="https://github.com/ramonmatias/n8n-nodes-kommo-v2"><img src="https://img.shields.io/badge/GitHub-Repositório-black?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"></a>     
+  <a href="https://www.npmjs.com/package/n8n-nodes-kommo-v2"><img src="https://img.shields.io/badge/NPM-Package-red?style=for-the-badge&logo=npm&logoColor=white" alt="NPM"></a>
 </p>
 
 > **Aviso:** Este node foi desenvolvido de forma independente para facilitar integrações com a API pública do Kommo CRM no n8n.  
@@ -173,12 +173,12 @@ Para utilizar o nosso **Community Node**, é necessário atender aos seguintes r
 **Via n8n Community Nodes:**
 1. Abra sua instância do n8n
 2. Vá para **Settings** → **Community Nodes**
-3. Instale o pacote: `n8n-nodes-kommo-crm`
+3. Instale o pacote: `n8n-nodes-kommo-v2`
 4. Reinicie o n8n
 
 **Via NPM:**
 ```bash
-npm install n8n-nodes-kommo-crm
+npm install n8n-nodes-kommo-v2
 ```
 
 <h1></h1>
