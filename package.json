@@ -1,6 +1,6 @@
 {
   "name": "n8n-nodes-kommo-v2",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "n8n node para integração completa com Kommo CRM - suporta leads, contatos, empresas, tarefas, notas, listas, webhooks e muito mais",
   "keywords": [
     "n8n-community-node-package",
