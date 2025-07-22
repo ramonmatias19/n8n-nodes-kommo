@@ -5,6 +5,36 @@ Todas as mudanças importantes neste projeto serão documentadas neste arquivo.
 O formato é baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.0.0/),
 e este projeto adere ao [Versionamento Semântico](https://semver.org/lang/pt-BR/).
 
+## [1.1.6] - 2025-01-24
+
+### 🚀 **IMPLEMENTAÇÃO CORRETA AI TOOLS - BASEADA NO AUTENTIQUE**
+
+**PROBLEMA RESOLVIDO!** Implementado seguindo o padrão exato do `n8n-nodes-autentique` e outros nodes funcionais.
+
+### 🔧 **Mudanças Críticas**
+- ✅ **Removida lógica condicional** com variável de ambiente
+- ✅ **Implementado `usableAsTool: true` direto** (como Autentique, Portainer, Canva)
+- ✅ **Tipagem customizada** `INodeTypeDescription & { usableAsTool?: boolean }`
+- ✅ **Grupo alterado** de `['output']` para `['tool']` (padrão AI Tools)
+
+### 💡 **Descoberta Importante**
+**TODOS os nodes funcionais** (Autentique, Portainer, Canva) usam:
+```typescript
+usableAsTool: true,  // Direto, SEM condicionais
+```
+
+### 🔥 **Agora deve funcionar igual aos outros!**
+- ✅ **Mesmo padrão** do Autentique (comprovadamente funcional)
+- ✅ **Tipagem correta** para evitar erros TypeScript  
+- ✅ **Categoria 'tool'** para melhor organização
+- ✅ **Zero dependência** de variáveis de ambiente
+
+### 📦 **Instalação Simplificada**
+```bash
+# Não precisa mais de variáveis de ambiente!
+npm install n8n-nodes-kommo-v2@1.1.6
+```
+
 ## [1.1.4] - 2025-01-24
 
 ### 🔧 **Verificação e Correções AI Tool**

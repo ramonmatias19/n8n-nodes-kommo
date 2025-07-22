@@ -1,7 +1,9 @@
 import { IExecuteFunctions, INodeType, INodeTypeBaseDescription, INodeTypeDescription } from 'n8n-workflow';
 import * as loadOptions from './methods';
 export declare class KommoV1 implements INodeType {
-    description: INodeTypeDescription;
+    description: INodeTypeDescription & {
+        usableAsTool?: boolean;
+    };
     constructor(baseDescription: INodeTypeBaseDescription);
     methods: {
         loadOptions: typeof loadOptions;

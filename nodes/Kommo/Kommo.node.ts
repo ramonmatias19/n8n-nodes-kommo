@@ -7,7 +7,7 @@ export class Kommo extends VersionedNodeType {
 			displayName: 'Kommo',
 			name: 'kommo',
 			icon: 'file:kommo_logo.svg',
-			group: ['output'],
+			group: ['tool'],
 			subtitle: '={{$parameter["operation"] + ": " + $parameter["resource"]}}',
 			description: 'Sends data to Kommo',
 			defaultVersion: 1,

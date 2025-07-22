@@ -199,29 +199,20 @@ npm install n8n-nodes-kommo-v2
 
 <h3>🤖 Uso como Ferramenta AI</h3>
 
-O **n8n-nodes-kommo-v2** pode ser usado como ferramenta em **AI Agents**! Para ativar essa funcionalidade:
+O **n8n-nodes-kommo-v2** pode ser usado como ferramenta em **AI Agents**! 
 
-**1. Configure a variável de ambiente:**
-```bash
-N8N_COMMUNITY_PACKAGES_ALLOW_TOOL_USAGE=true
-```
+**Como usar:**
+- **Instale o node** (versão 1.1.6+)
+- **Adicione um nó AI Agent** no seu workflow
+- **Em Tools**, você encontrará **Kommo CRM** automaticamente disponível! 
+- **Configure as credenciais** e o AI Agent poderá usar o Kommo diretamente
 
-**2. Inicie o n8n:**
-```bash
-# Via npm
-N8N_COMMUNITY_PACKAGES_ALLOW_TOOL_USAGE=true npx n8n start
-
-# Via Docker
-docker run -e N8N_COMMUNITY_PACKAGES_ALLOW_TOOL_USAGE=true -p 5678:5678 n8nio/n8n
-
-# Via Docker Compose (adicione no arquivo .env)
-N8N_COMMUNITY_PACKAGES_ALLOW_TOOL_USAGE=true
-```
-
-**3. No n8n:**
-- Adicione um nó **AI Agent** 
-- Em **Tools**, você encontrará **Kommo CRM** disponível
-- Configure as credenciais e o AI Agent poderá usar o Kommo automaticamente!
+**Exemplos de comandos:**
+- *"Criar um lead para João Silva com telefone (11) 99999-9999"*
+- *"Buscar leads da empresa TechCorp"*  
+- *"Atualizar status do lead para Qualificado"*
+- *"Listar todas as tarefas pendentes"*
+- *"Criar webhook para notificações de lead"*
 
 **Casos de uso AI:**
 - *"Crie um lead para [nome] com telefone [número]"*

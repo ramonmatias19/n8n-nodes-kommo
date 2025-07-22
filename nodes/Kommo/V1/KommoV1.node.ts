@@ -18,7 +18,7 @@ import * as lists from './resources/lists';
 import * as webhooks from './resources/webhooks';
 
 export class KommoV1 implements INodeType {
-	description: INodeTypeDescription;
+	description: INodeTypeDescription & { usableAsTool?: boolean };
 
 	constructor(baseDescription: INodeTypeBaseDescription) {
 		this.description = {
@@ -26,7 +26,7 @@ export class KommoV1 implements INodeType {
 			displayName: 'Kommo CRM',
 			name: 'kommo',
 			icon: 'file:kommo_logo.svg',
-			group: ['output'],
+			group: ['tool'],
 			version: 1,
 			subtitle: '={{ $parameter["operation"] + ": " + $parameter["resource"] }}',
 			description: 'Integração completa com Kommo CRM - gerencie leads, contatos, empresas, tarefas, notas, listas e webhooks',
@@ -35,7 +35,7 @@ export class KommoV1 implements INodeType {
 			},
 			inputs: ['main'],
 			outputs: ['main'],
-			...(process.env.N8N_COMMUNITY_PACKAGES_ALLOW_TOOL_USAGE === 'true' && { usableAsTool: true }),
+			usableAsTool: true,
 			credentials: [
 				{
 					name: 'kommoOAuth2Api',
