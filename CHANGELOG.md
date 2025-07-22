@@ -5,6 +5,48 @@ Todas as mudanças importantes neste projeto serão documentadas neste arquivo.
 O formato é baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.0.0/),
 e este projeto adere ao [Versionamento Semântico](https://semver.org/lang/pt-BR/).
 
+## [1.1.0] - 2025-01-24
+
+### 🤖 **Recurso AI ATIVADO!**
+
+**NOVIDADE:** O Kommo CRM agora funciona como **ferramenta para AI Agents**!
+
+### ✨ **Adicionado**
+- **Suporte a AI Tools** com `usableAsTool: true` condicional
+- **Integração inteligente** que ativa automaticamente quando `N8N_COMMUNITY_PACKAGES_ALLOW_TOOL_USAGE=true`
+- **Documentação completa** sobre como usar com AI Agents
+- **Exemplos de uso** com comandos em linguagem natural
+
+### 🧠 **Capacidades AI**
+- Criar leads automaticamente via comandos em texto
+- Buscar e filtrar dados do CRM por critérios específicos  
+- Atualizar registros baseado em contexto da conversa
+- Adicionar notas e acompanhar interações
+- Gerenciar pipeline de vendas com linguagem natural
+
+### 💡 **Como Ativar**
+```bash
+# Defina a variável de ambiente
+N8N_COMMUNITY_PACKAGES_ALLOW_TOOL_USAGE=true
+
+# Inicie o n8n
+npx n8n start
+```
+
+### 🎯 **Casos de Uso**
+- **"Crie um lead para João Silva, telefone (11) 99999-9999"**
+- **"Mostre todos os leads da empresa TechCorp"**  
+- **"Mova o lead para status 'Qualificado'"**
+- **"Adicione nota: 'Cliente interessado em plano premium'"**
+
+### 🔧 **Implementação Técnica**
+- Implementação condicional para evitar erros de TypeScript
+- Compatível com todas as versões do n8n que suportam AI Tools
+- Zero impacto na performance quando não utilizado
+- Integração transparente com existing workflows
+
+---
+
 ## [1.0.0] - 2025-01-24 - n8n-nodes-kommo-v2
 
 ### 🚀 **Nova Identidade do Pacote**

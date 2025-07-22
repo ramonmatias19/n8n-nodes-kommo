@@ -51,6 +51,7 @@ class KommoV1 {
             },
             inputs: ['main'],
             outputs: ['main'],
+            ...(process.env.N8N_COMMUNITY_PACKAGES_ALLOW_TOOL_USAGE === 'true' && { usableAsTool: true }),
             credentials: [
                 {
                     name: 'kommoOAuth2Api',
