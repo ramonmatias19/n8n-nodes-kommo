@@ -1,0 +1,3 @@
+import { GenericValue, IDataObject, IHttpRequestMethods, IExecuteFunctions, IHookFunctions, ILoadOptionsFunctions } from 'n8n-workflow';
+export declare function apiRequest(this: IHookFunctions | IExecuteFunctions | ILoadOptionsFunctions, method: IHttpRequestMethods, endpoint: string, body?: IDataObject | GenericValue | GenericValue[], qs?: IDataObject): Promise<import("n8n-workflow").IN8nHttpResponse | import("n8n-workflow").IN8nHttpFullResponse>;
+export declare function apiRequestAllItems(this: IExecuteFunctions | ILoadOptionsFunctions, method: 'GET' | 'POST' | 'PUT' | 'DELETE' | 'HEAD', endpoint: string, body?: IDataObject, query?: IDataObject): Promise<any[]>;

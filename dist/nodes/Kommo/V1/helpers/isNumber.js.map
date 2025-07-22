@@ -1,0 +1,1 @@
+{"version":3,"file":"isNumber.js","sourceRoot":"","sources":["../../../../../nodes/Kommo/V1/helpers/isNumber.ts"],"names":[],"mappings":";;;AAAO,MAAM,QAAQ,GAAG,CAAC,CAAkB,EAAW,EAAE;IACvD,MAAM,KAAK,GAAG,MAAM,CAAC,CAAC,CAAC,CAAC,IAAI,EAAE,CAAC;IAC/B,OAAO,KAAK,CAAC,MAAM,KAAK,MAAM,CAAC,KAAK,CAAC,CAAC,QAAQ,EAAE,CAAC,MAAM,CAAC;AACzD,CAAC,CAAC;AAHW,QAAA,QAAQ,YAGnB"}

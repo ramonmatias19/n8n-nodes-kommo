@@ -1,0 +1,1 @@
+{"version":3,"file":"RequestId.js","sourceRoot":"","sources":["../../../../../../nodes/Kommo/V1/resources/_components/RequestId.ts"],"names":[],"mappings":";;;AAEO,MAAM,YAAY,GAAG,CAAC,cAAgC,EAAmB,EAAE;IACjF,OAAO;QACN,WAAW,EAAE,YAAY;QACzB,IAAI,EAAE,YAAY;QAClB,IAAI,EAAE,QAAQ;QACd,OAAO,EAAE,SAAS;QAClB,cAAc;QACd,WAAW,EAAE,iFAAiF;KAC9F,CAAC;AACH,CAAC,CAAC;AATW,QAAA,YAAY,gBASvB"}

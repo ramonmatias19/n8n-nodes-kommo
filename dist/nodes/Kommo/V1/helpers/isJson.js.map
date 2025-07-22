@@ -1,0 +1,1 @@
+{"version":3,"file":"isJson.js","sourceRoot":"","sources":["../../../../../nodes/Kommo/V1/helpers/isJson.ts"],"names":[],"mappings":";;;AAAO,MAAM,MAAM,GAAG,CAAC,GAAW,EAAW,EAAE;IAC9C,IAAI;QACH,IAAI,CAAC,KAAK,CAAC,GAAG,CAAC,CAAC;QAChB,OAAO,IAAI,CAAC;KACZ;IAAC,OAAO,CAAC,EAAE;QACX,OAAO,KAAK,CAAC;KACb;AACF,CAAC,CAAC;AAPW,QAAA,MAAM,UAOjB"}

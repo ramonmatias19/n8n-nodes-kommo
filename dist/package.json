@@ -1,0 +1,67 @@
+{
+    "name": "n8n-nodes-kommo-crm",
+    "version": "1.0.0",
+    "description": "n8n node para integração completa com Kommo CRM - suporta leads, contatos, empresas, tarefas, notas, listas, webhooks e muito mais",
+    "keywords": [
+        "n8n-community-node-package",
+        "kommo",
+        "kommo-crm",
+        "crm",
+        "sales",
+        "leads",
+        "n8n"
+    ],
+    "license": "MIT",
+    "homepage": "https://github.com/ramonmatias/n8n-nodes-kommo-crm",
+    "author": {
+        "name": "Ramon Matias",
+        "email": "contato@ramonmatias.dev",
+        "url": "https://ramonmatias.dev"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/ramonmatias/n8n-nodes-kommo-crm.git"
+    },
+    "engines": {
+        "node": ">=18.10",
+        "pnpm": ">=9.1"
+    },
+    "packageManager": "pnpm@9.1.4",
+    "main": "index.js",
+    "scripts": {
+        "build": "tsc && gulp build:icons",
+        "dev": "tsc --watch",
+        "format": "prettier nodes credentials --write",
+        "lint": "eslint nodes credentials package.json",
+        "lintfix": "eslint nodes credentials package.json --fix",
+        "prepublishOnly": "npm run build && npm run lint -c .eslintrc.prepublish.js nodes credentials package.json"
+    },
+    "files": [
+        "dist"
+    ],
+    "n8n": {
+        "n8nNodesApiVersion": 1,
+        "credentials": [
+            "dist/credentials/kommoOAuth2Api.credentials.js",
+            "dist/credentials/kommoLongLivedApi.credentials.js"
+        ],
+        "nodes": [
+            "dist/nodes/Kommo/Kommo.node.js"
+        ]
+    },
+    "devDependencies": {
+        "@types/markdown-it": "^14.1.2",
+        "@types/node": "^22.10.0",
+        "@typescript-eslint/parser": "^8.15.0",
+        "eslint": "^9.16.0",
+        "eslint-plugin-n8n-nodes-base": "^1.18.0",
+        "gulp": "^5.0.0",
+        "n8n-workflow": "*",
+        "prettier": "^3.4.1",
+        "typescript": "^5.7.2"
+    },
+    "peerDependencies": {
+        "n8n-workflow": "*"
+    },
+    "dependencies": {}
+}

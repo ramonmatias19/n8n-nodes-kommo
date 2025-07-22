@@ -1,0 +1,17 @@
+import { IExecuteFunctions, ILoadOptionsFunctions, INodePropertyOptions } from 'n8n-workflow';
+export declare function loadPipelinesOptions(this: IExecuteFunctions | ILoadOptionsFunctions): Promise<INodePropertyOptions[]>;
+export declare const getStatuses: (this: ILoadOptionsFunctions) => Promise<INodePropertyOptions[]>;
+export declare const getStatusesWithoutUnsorted: (this: ILoadOptionsFunctions) => Promise<INodePropertyOptions[]>;
+export declare const getCatalogs: (this: ILoadOptionsFunctions) => Promise<INodePropertyOptions[]>;
+export declare const getCatalogElements: (this: ILoadOptionsFunctions) => Promise<INodePropertyOptions[]>;
+export declare const getActiveUsers: (this: ILoadOptionsFunctions) => Promise<INodePropertyOptions[]>;
+export declare const getActiveUsersWithRobot: (this: ILoadOptionsFunctions) => Promise<INodePropertyOptions[]>;
+export declare const getLeadCustomFields: (this: ILoadOptionsFunctions) => Promise<INodePropertyOptions[]>;
+export declare const getContactCustomFields: (this: ILoadOptionsFunctions) => Promise<INodePropertyOptions[]>;
+export declare const getCompanyCustomFields: (this: ILoadOptionsFunctions) => Promise<INodePropertyOptions[]>;
+export declare const getCustomerCustomFields: (this: ILoadOptionsFunctions) => Promise<INodePropertyOptions[]>;
+export declare const getCustomerSegmentCustomFields: (this: ILoadOptionsFunctions) => Promise<INodePropertyOptions[]>;
+export declare const getCatalogCustomFields: (this: ILoadOptionsFunctions) => Promise<INodePropertyOptions[]>;
+export declare const getLossReasons: (this: ILoadOptionsFunctions) => Promise<INodePropertyOptions[]>;
+export declare const getTags: (this: ILoadOptionsFunctions) => Promise<INodePropertyOptions[]>;
+export declare const getTaskTypes: (this: ILoadOptionsFunctions) => Promise<INodePropertyOptions[]>;
