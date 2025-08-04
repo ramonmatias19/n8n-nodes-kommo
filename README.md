@@ -14,7 +14,7 @@ Este Community Node é uma solução 100% gratuita, criada com o intuito de simp
 
 <p align="center">
   <a href="mailto:contato@ramonmatias.dev"><img src="https://img.shields.io/badge/Email-Suporte-red?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"></a>     
-  <a href="https://github.com/ramonmatias/n8n-nodes-kommo-v2"><img src="https://img.shields.io/badge/GitHub-Repositório-black?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"></a>     
+  <a href="https://github.com/ramonmatias19/n8n-nodes-kommo-v2"><img src="https://img.shields.io/badge/GitHub-Repositório-black?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"></a>     
   <a href="https://www.npmjs.com/package/n8n-nodes-kommo-v2"><img src="https://img.shields.io/badge/NPM-Package-red?style=for-the-badge&logo=npm&logoColor=white" alt="NPM"></a>
 </p>
 
